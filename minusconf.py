@@ -2,7 +2,7 @@
 #from __future__ import unicode_literals
 
 """
-Implementation of the minusconf protocol. See http://code.google.com/p/minusconf/ for details.
+Implementation of the minusconf protocol. Refer to README.md for details.
 Apache License 2.0, see the LICENSE file for details.
 
 Most users will want a (Thread)Advertiser to advertise their server's location and a Seeker to find out the locations of servers and report them to a client program.
@@ -207,7 +207,7 @@ class Advertiser(object):
             elif opcode == _OPCODE_ERROR:
                 pass # Explicitely prevent bouncing errors
             elif opcode == None:
-                raise MinusconfError('Minusconf magic missing. See http://code.google.com/p/minusconf/source/browse/trunk/protocol.txt for details.')
+                raise MinusconfError('Minusconf magic missing. See README.md section #PROTOCOL for details.')
             else:
                 raise MinusconfError('Invalid or unsupported opcode ' + str(struct.unpack('!B', opcode)[0]))
         # Comment out for verbose error handling
