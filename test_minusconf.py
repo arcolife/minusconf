@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 #from __future__ import unicode_literals
 """Apache License 2.0, see the LICENSE file for details."""
 
